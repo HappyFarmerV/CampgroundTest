@@ -11,24 +11,34 @@
             margin: 0;
             padding: 0;
         }
+        
         header {
-            background-image: url('image/camp.png');
+            background-image: url('images/camp-bg.jpg');
             background-size: cover;
             background-position: center;
             padding: 3rem 1rem;
+            display: flex;
+            justify-content: center; /* This will horizontally center the content */
+            align-items: center; /* This will vertically center the content */
+            height: 100vh; /* Makes the header fill the whole viewport height */
         }
+        
         .header-content {
             background-color: rgba(255, 255, 255, 0.9);
             color: #2e8b57;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            max-width: 900px;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%; /* Ensure it spans the entire width */
+            
+            /*max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            flex-wrap: wrap;
+            flex-wrap: wrap;*/
         }
         .header-text {
             flex: 1 1 100%;

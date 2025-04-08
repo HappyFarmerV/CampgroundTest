@@ -12,31 +12,48 @@
             padding: 0;
         }
         header {
-            background-image: url('image/camp.png');
+            background-image: url('images/camp-bg.jpg');
             background-size: cover;
             background-position: center;
             padding: 3rem 1rem;
         }
         .header-content {
-            background-color: rgba(255, 255, 255, 0.9); /* light background for readability */
+            background-color: rgba(255, 255, 255, 0.9);
             color: #2e8b57;
             display: flex;
             align-items: center;
             justify-content: space-between;
             max-width: 900px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
         }
-        .header-content h1 {
-            flex: 1;
-            margin: 0;
-            font-size: 1.8rem;
+        .header-text {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+        .header-text h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .book-btn {
+            display: inline-block;
+            background-color: #2e8b57;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .book-btn:hover {
+            background-color: #246b46;
         }
         .header-content img {
             max-height: 80px;
-            margin-left: 20px;
+            margin-top: 1rem;
         }
         footer {
             background-color: #2E8B57;

@@ -81,10 +81,22 @@
             line-height: 1.6;
             color: #333;
         }
+        .about-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .about-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
 
-
-        
-        
     </style>
 </head>
 <body>
@@ -102,6 +114,13 @@
         <h2>About Us</h2>
         <p>Northport RV Park is a convenient destination nestatination near of the<br> stadium and the state of the art baseball facility, enjoy.</p>
     </section>
+
+    <div class="about-gallery">
+        <img src="image/pic1.jpg" alt="Campground View 1">
+        <img src="image/pic2.jpg" alt="Campground View 2">
+        <img src="image/pic3.jpg" alt="Campground View 3">
+        <img src="image/pic4.jpg" alt="Campground View 4">
+    </div>
 
         <h2>Contact Us</h2>
         <p>For reservations or more information, please reach out to us at: <strong>campground@example.com</strong></p>
